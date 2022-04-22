@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 87px 0px 110px 0px;
+  font-family: "Inter";
+}
+.wrapper #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 190px;
+}
+.wrapper #header .header__logo-icon {
+  cursor: pointer;
+}
+.wrapper #header .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper #header .header__menu .menu__elem {
+  margin-right: 80px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6b7280;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.wrapper #header .header__menu .menu__elem:last-child {
+  margin: 0;
+}
+.wrapper #header .header__menu .menu__elem:hover {
+  color: #3730a3;
+}
+.wrapper #main .infoAboutJessica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 196px;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__topSubtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__topSubtitle .infoJessica__topSubtitle-line {
+  min-width: 102px;
+  height: 2px;
+  background-color: #3730a3;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__topSubtitle .infoJessica__topSubtitle-title {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4338ca;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__mainTitle {
+  max-width: 596px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__mainDescription {
+  max-width: 553px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__buttonsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__buttonsBox .btn {
+  margin-right: 20px;
+  padding: 12px 32px;
+  background-color: #ffffff;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3730a3;
+  border: 2px solid #3730a3;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__buttonsBox .btn:last-child {
+  margin: 0;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__buttonsBox .btn:hover {
+  background-color: #3730a3;
+  color: #ffffff;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__line {
+  min-width: 622px;
+  height: 2px;
+  background-color: #e5e7eb;
+  margin-bottom: 20px;
+}
+.wrapper #main .infoAboutJessica .infoJessica .infoJessica__bottomDescription {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+}
+.wrapper #main .infoTitle,
+.wrapper #main .secondTitle,
+.wrapper #main .thirdTitle {
+  max-width: 1039px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  color: #1f2937;
+  margin-bottom: 150px;
+  text-align: center;
+}
+.wrapper #main .infoTitle .text__fiolet,
+.wrapper #main .secondTitle .text__fiolet,
+.wrapper #main .thirdTitle .text__fiolet {
+  color: #3730a3;
+}
+.wrapper #main .imgAndCardsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+.wrapper #main .imgAndCardsBox .imgBox {
+  margin-right: 50px;
+}
+.wrapper #main .imgAndCardsBox .cardsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1,
+.wrapper #main .imgAndCardsBox .cardsBox .row2,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 34px 0px;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card {
+  max-width: 311px;
+  margin-right: 68px;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card:last-child,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card:last-child,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card:last-child {
+  margin: 0;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card .card__title,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card .card__title,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card .card__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card .card__description,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card .card__description,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card .card__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card .seeClick__box,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card .seeClick__box,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card .seeClick__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  cursor: pointer;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card .seeClick__box .seeClick__text,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card .seeClick__box .seeClick__text,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card .seeClick__box .seeClick__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3730a3;
+}
+.wrapper #main .imgAndCardsBox .cardsBox .row1 .card .seeClick__box .seeClick__imgBox,
+.wrapper #main .imgAndCardsBox .cardsBox .row2 .card .seeClick__box .seeClick__imgBox,
+.wrapper #main .imgAndCardsBox .cardsBox .row3 .card .seeClick__box .seeClick__imgBox {
+  margin-left: 5px;
+}
+.wrapper #main .tapeSponsors {
+  min-height: 299px;
+  background-color: #fef2f2;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper #main .tapeSponsors .sponsor__imgBox {
+  margin-right: 94px;
+}
+.wrapper #main .tapeSponsors .sponsor__imgBox:first-child {
+  padding-left: 8px;
+}
+.wrapper #main .tapeSponsors .sponsor__imgBox:last-child {
+  padding-right: 8px;
+  margin: 0;
+}
+.wrapper #main .imagesContainer {
+  margin-bottom: 150px;
+}
+.wrapper #main .imagesContainer .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper #main .imagesContainer .imgBox .imgBox__left {
+  margin: 0px 30px 30px 0px;
+}
+.wrapper #main .imagesContainer .imgBox .imgBox__left .imgBox__img {
+  margin-bottom: 30px;
+}
+.wrapper #main .imagesContainer .imgBox .imgBox__left .imgBox__img:last-child {
+  margin: 0;
+}
+.wrapper #main .imagesContainer .imgBox .imgRight__box {
+  position: relative;
+}
+.wrapper #main .imagesContainer .imgBox .imgRight__box .imgBox__imgRight {
+  margin-bottom: 30px;
+}
+.wrapper #main .imagesContainer .imgBox .imgRight__box .card {
+  padding: 23px 27px;
+  margin: 0 auto;
+  width: 495px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  bottom: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper #main .imagesContainer .imgBox .imgRight__box .card .card__info .card__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f2937;
+}
+.wrapper #main .imagesContainer .imgBox .imgRight__box .card .card__info .card__description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ca3af;
+}
+.wrapper #main .imagesContainer .imgBox .imgRight__box .card .card__iconArrow {
+  cursor: pointer;
+}
+.wrapper #main .cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+.wrapper #main .cardContainer .card__item {
+  max-width: 325px;
+  cursor: pointer;
+}
+.wrapper #main .cardContainer .card__item .fon__logo {
+  max-width: 140px;
+  min-height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background-color: #eef2ff;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+.wrapper #main .cardContainer .card__item .card__title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #374151;
+}
+.wrapper #main .cardContainer .card__item .card__description {
+  max-width: 325px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #9ca3af;
+}
+.wrapper #main .careersBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-bottom: 150px;
+}
+.wrapper #main .careersBox .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+.wrapper #main .careersBox .itemStyle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b7280;
+}
+.wrapper #main .careersBox .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper #main .careersBox .company .company__item {
+  margin: 0px 339px 80px 0px;
+}
+.wrapper #main .careersBox .company .company__item .massaFames {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1f2937;
+}
+.wrapper #main .careersBox .position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper #main .careersBox .position .position__item {
+  margin: 0px 323px 80px 0px;
+}
+.wrapper #main .careersBox .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper #main .careersBox .year .year__item {
+  margin-bottom: 80px;
+}
+.wrapper #footer .footerWrapper {
+  min-width: 100%;
+  background-color: #fef2f2;
+  padding: 110px 0px;
+}
+.wrapper #footer .footerWrapper .footerTitle {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #374151;
+  margin-bottom: 20px;
+}
+.wrapper #footer .footerWrapper .footerDescription {
+  margin: 0 auto;
+  max-width: 664px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 100px;
+}
+.wrapper #footer .footerWrapper .footerIcons__container {
+  max-width: 460px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

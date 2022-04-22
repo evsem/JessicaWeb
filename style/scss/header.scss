@@ -1,0 +1,32 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 190px;
+  .header__logo {
+    &-icon {
+      cursor: pointer;
+    }
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .menu__elem {
+      margin-right: 80px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #6b7280;
+      cursor: pointer;
+      transition: all 0.2s linear;
+      &:last-child {
+        margin: 0;
+      }
+      &:hover {
+        color: #3730a3;
+      }
+    }
+  }
+}
