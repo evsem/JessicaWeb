@@ -514,3 +514,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.wrapper #footer .footerWrapper .footerIcons__container .footerIcon__box .footerIcon__icon {
+  cursor: pointer;
+}
