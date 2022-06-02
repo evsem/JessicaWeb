@@ -589,6 +589,17 @@ body {
   .images__body-left__img {
   margin-bottom: 30px;
 }
+.images__body-left__img {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+.images__body-left__img.item__animation {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
 .wrapper
   #main
   .images
@@ -739,7 +750,7 @@ body {
   background-color: #fef2f2;
 }
 .wrapper #footer .footer__container {
-  padding: 110px 0px;
+  padding: 50px 0px;
 }
 .wrapper #footer .footer__container .footer__title {
   font-weight: 500;
@@ -779,11 +790,4 @@ body {
   .footer__images-img__box
   .footer__images-img {
   cursor: pointer;
-}
-
-.header__logo-theme__text[data-theme="dark"] {
-  display: block;
-}
-.header__logo-theme__text[data-theme="light"] {
-  display: none;
 }

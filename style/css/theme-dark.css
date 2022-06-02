@@ -29,6 +29,7 @@ body {
   font-size: 14px;
   color: black;
   height: 100vh;
+  background-color: #222;
 }
 
 [class*="__container"] {
@@ -83,7 +84,7 @@ body {
   font-size: 22px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #6b7280;
+  color: #fff;
   cursor: pointer;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
@@ -94,7 +95,7 @@ body {
   .header__logo
   .header__logo-theme
   .header__logo-theme__text:hover {
-  color: #222222;
+  color: #c8c8c8;
 }
 .wrapper
   #header
@@ -120,7 +121,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  color: #6b7280;
+  color: #fff;
   list-style: none;
   cursor: pointer;
   -webkit-transition: all 0.2s linear;
@@ -134,7 +135,7 @@ body {
   margin: 0;
 }
 .wrapper #header .header__container .header__menu .header__menu-item:hover {
-  color: #3730a3;
+  color: #b5b5b5;
 }
 .wrapper #main .about {
   margin-bottom: 196px;
@@ -172,7 +173,7 @@ body {
   .about__info-heading__line {
   min-width: 102px;
   height: 2px;
-  background-color: #3730a3;
+  background-color: #fff;
 }
 .wrapper
   #main
@@ -184,14 +185,14 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: #4338ca;
+  color: #fff;
 }
 .wrapper #main .about .about__info .about__info-title {
   max-width: 596px;
   font-weight: 700;
   font-size: 72px;
   line-height: 72px;
-  color: #1f2937;
+  color: #fff;
   margin-bottom: 40px;
 }
 .wrapper #main .about .about__info .about__info-descr {
@@ -199,7 +200,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #6b7280;
+  color: #fff;
   margin-bottom: 40px;
 }
 .wrapper #main .about .about__info .about__info-buttons {
@@ -217,13 +218,13 @@ body {
 .wrapper #main .about .about__info .about__info-buttons .about__info-button {
   margin-right: 20px;
   padding: 12px 32px;
-  background-color: #ffffff;
+  background-color: #222;
   font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  color: #3730a3;
-  border: 2px solid #3730a3;
+  color: #fff;
+  border: 2px solid #fff;
   border-radius: 6px;
   cursor: pointer;
   -webkit-transition: all 0.2s linear;
@@ -243,20 +244,20 @@ body {
   .about__info
   .about__info-buttons
   .about__info-button:hover {
-  background-color: #3730a3;
-  color: #ffffff;
+  background-color: #dadada;
+  color: #222;
 }
 .wrapper #main .about .about__info .about__info-line {
   min-width: 622px;
   height: 2px;
-  background-color: #e5e7eb;
+  background-color: #fff;
   margin-bottom: 20px;
 }
 .wrapper #main .about .about__info .about__info-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #6b7280;
+  color: #fff;
 }
 .wrapper #main .about .about__img-box {
   max-width: 478px;
@@ -283,12 +284,12 @@ body {
   font-weight: 600;
   font-size: 48px;
   line-height: 48px;
-  color: #1f2937;
+  color: #fff;
   margin-bottom: 150px;
   text-align: center;
 }
 .wrapper #main .title .text__fiolet {
-  color: #3730a3;
+  color: #dadada;
 }
 .wrapper #main .cards {
   margin-bottom: 150px;
@@ -410,7 +411,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #1f2937;
+  color: #fff;
   margin-bottom: 20px;
 }
 .wrapper
@@ -440,7 +441,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #6b7280;
+  color: #dadada;
   margin-bottom: 20px;
 }
 .wrapper
@@ -505,7 +506,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #3730a3;
+  color: #fff;
 }
 .wrapper
   #main
@@ -537,7 +538,7 @@ body {
   margin-left: 5px;
 }
 .wrapper #main .sponsors {
-  background-color: #fef2f2;
+  background-color: rgb(47, 47, 47);
   margin-bottom: 150px;
 }
 .wrapper #main .sponsors .sponsors__container {
@@ -589,6 +590,18 @@ body {
   .images__body-left__img {
   margin-bottom: 30px;
 }
+
+.images__body-left__img {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+.images__body-left__img.item__animation {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
 .wrapper
   #main
   .images
@@ -617,7 +630,7 @@ body {
   padding: 23px 27px;
   margin: 0 auto;
   width: 495px;
-  background-color: #ffffff;
+  background-color: rgb(226, 226, 226);
   position: absolute;
   z-index: 1;
   left: 20px;
@@ -643,7 +656,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  color: #1f2937;
+  color: #222;
 }
 .wrapper
   #main
@@ -656,7 +669,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #9ca3af;
+  color: #222;
 }
 .wrapper
   #main
@@ -704,7 +717,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: #eef2ff;
+  background-color: rgb(47, 47, 47);
   border: none;
   border-radius: 6px;
   margin-bottom: 40px;
@@ -720,7 +733,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  color: #374151;
+  color: #fff;
 }
 .wrapper
   #main
@@ -733,20 +746,20 @@ body {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  color: #9ca3af;
+  color: #fff;
 }
 .wrapper #footer {
-  background-color: #fef2f2;
+  background-color: rgb(47, 47, 47);
 }
 .wrapper #footer .footer__container {
-  padding: 110px 0px;
+  padding: 50px 0px;
 }
 .wrapper #footer .footer__container .footer__title {
   font-weight: 500;
   font-size: 48px;
   line-height: 48px;
   text-align: center;
-  color: #374151;
+  color: #fff;
   margin-bottom: 20px;
 }
 .wrapper #footer .footer__container .footer__descr {
@@ -756,7 +769,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  color: #9ca3af;
+  color: #fff;
   margin-bottom: 100px;
 }
 .wrapper #footer .footer__container .footer__images-box {
@@ -782,8 +795,8 @@ body {
 }
 
 .header__logo-theme__text[data-theme="dark"] {
-  display: block;
+  display: none;
 }
 .header__logo-theme__text[data-theme="light"] {
-  display: none;
+  display: block;
 }

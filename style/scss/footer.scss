@@ -1,10 +1,8 @@
 #footer {
-  .footerWrapper {
-    min-width: 100%;
-    background-color: #fef2f2;
+  background-color: #fef2f2;
+  .footer__container {
     padding: 110px 0px;
-
-    .footerTitle {
+    .footer__title {
       font-weight: 500;
       font-size: 48px;
       line-height: 48px;
@@ -12,7 +10,7 @@
       color: #374151;
       margin-bottom: 20px;
     }
-    .footerDescription {
+    .footer__descr {
       margin: 0 auto;
       max-width: 664px;
       font-weight: 400;
@@ -22,14 +20,14 @@
       color: #9ca3af;
       margin-bottom: 100px;
     }
-    .footerIcons__container {
+    .footer__images-box {
       max-width: 460px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .footerIcon__box {
-        .footerIcon__icon {
+      .footer__images-img__box {
+        .footer__images-img {
           cursor: pointer;
         }
       }

@@ -1,21 +1,24 @@
 #main {
-  .infoAboutJessica {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .about {
     margin-bottom: 196px;
-    .infoJessica {
-      .infoJessica__topSubtitle {
+    .about__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about__info {
+      .about__info-heading {
         display: flex;
         justify-content: start;
         align-items: center;
         margin-bottom: 40px;
-        .infoJessica__topSubtitle-line {
+        .about__info-heading__line {
           min-width: 102px;
           height: 2px;
           background-color: #3730a3;
         }
-        .infoJessica__topSubtitle-title {
+        .about__info-heading__name {
           margin-left: 10px;
           font-weight: 500;
           font-size: 20px;
@@ -24,7 +27,7 @@
         }
       }
 
-      .infoJessica__mainTitle {
+      .about__info-title {
         max-width: 596px;
         font-weight: 700;
         font-size: 72px;
@@ -32,7 +35,7 @@
         color: #1f2937;
         margin-bottom: 40px;
       }
-      .infoJessica__mainDescription {
+      .about__info-descr {
         max-width: 553px;
         font-weight: 400;
         font-size: 18px;
@@ -40,16 +43,16 @@
         color: #6b7280;
         margin-bottom: 40px;
       }
-      .infoJessica__buttonsBox {
+      .about__info-buttons {
         display: flex;
         justify-content: start;
         align-items: center;
         margin-bottom: 32px;
-        .btn {
+        .about__info-button {
           margin-right: 20px;
           padding: 12px 32px;
           background-color: #ffffff;
-          font-family: 'Inter';
+          font-family: "Inter";
           font-weight: 500;
           font-size: 18px;
           line-height: 28px;
@@ -68,13 +71,13 @@
         }
       }
 
-      .infoJessica__line {
+      .about__info-line {
         min-width: 622px;
         height: 2px;
         background-color: #e5e7eb;
         margin-bottom: 20px;
       }
-      .infoJessica__bottomDescription {
+      .about__info-text {
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
@@ -82,15 +85,22 @@
       }
     }
 
-    .imgJessica {
-      .imgJessica__img {
+    .about__img-box {
+      max-width: 478px;
+      max-height: 525px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      .about__img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
 
-  .infoTitle,
-  .secondTitle,
-  .thirdTitle {
+  .title {
     max-width: 1039px;
     margin: 0 auto;
     font-weight: 600;
@@ -104,64 +114,64 @@
     }
   }
 
-  .imgAndCardsBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .cards {
     margin-bottom: 150px;
-    .imgBox {
-      margin-right: 50px;
-      .imgBox__img {
-      }
-    }
-
-    .cardsBox {
+    .cards__container {
       display: flex;
-      flex-direction: column;
-      justify-content: start;
+      justify-content: space-between;
       align-items: center;
+      .cards__img-box {
+        margin-right: 50px;
+        .cards__img {
+        }
+      }
 
-      .row1,
-      .row2,
-      .row3 {
+      .cards__box {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: start;
         align-items: center;
-        margin: 34px 0px;
-        .card {
-          max-width: 311px;
-          margin-right: 68px;
-          &:last-child {
-            margin: 0;
-          }
-          .card__title {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 28px;
-            color: #1f2937;
-            margin-bottom: 20px;
-          }
-          .card__description {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #6b7280;
-            margin-bottom: 20px;
-          }
-          .seeClick__box {
-            display: flex;
-            justify-content: start;
-
-            cursor: pointer;
-            .seeClick__text {
-              font-weight: 500;
+        .cards__box-row__top,
+        .cards__box-row__center,
+        .cards__box-row__bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 34px 0px;
+          .cards__box-item {
+            max-width: 311px;
+            margin-right: 68px;
+            &:last-child {
+              margin: 0;
+            }
+            .cards__box-item__heading {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 28px;
+              color: #1f2937;
+              margin-bottom: 20px;
+            }
+            .cards__box-item__descr {
+              font-weight: 400;
               font-size: 12px;
               line-height: 16px;
-              color: #3730a3;
+              color: #6b7280;
+              margin-bottom: 20px;
             }
-            .seeClick__imgBox {
-              margin-left: 5px;
-              .seeClick__img {
+            .cards__box-item__click {
+              display: flex;
+              justify-content: start;
+              cursor: pointer;
+              .cards__item-click__text {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                color: #3730a3;
+              }
+              .cards__click-img__box {
+                margin-left: 5px;
+                .cards__click-img {
+                }
               }
             }
           }
@@ -170,15 +180,18 @@
     }
   }
 
-  .tapeSponsors {
-    min-height: 299px;
+  .sponsors {
     background-color: #fef2f2;
     margin-bottom: 150px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .sponsor__imgBox {
+    .sponsors__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 299px;
+    }
+    .sponsors__img-box {
       margin-right: 94px;
       &:first-child {
         padding-left: 8px;
@@ -190,27 +203,27 @@
     }
   }
 
-  .imagesContainer {
+  .images {
     margin-bottom: 150px;
-    .imgBox {
+    .images__body {
       display: flex;
       justify-content: start;
       align-items: center;
-      .imgBox__left {
+      .images__body-left {
         margin: 0px 30px 30px 0px;
-        .imgBox__img {
+        .images__body-left__img {
           margin-bottom: 30px;
           &:last-child {
             margin: 0;
           }
         }
       }
-      .imgRight__box {
+      .images__body-right {
         position: relative;
-        .imgBox__imgRight {
+        .images__body-right__img {
           margin-bottom: 30px;
         }
-        .card {
+        .images__body-right__rectangle {
           padding: 23px 27px;
           margin: 0 auto;
           width: 495px;
@@ -219,18 +232,17 @@
           z-index: 1;
           left: 20px;
           bottom: 51px;
-
           display: flex;
           justify-content: space-between;
           align-items: center;
-          .card__info {
-            .card__title {
+          .images__right-rectangle__content {
+            .images__rectangle-content__heading {
               font-weight: 500;
               font-size: 18px;
               line-height: 28px;
               color: #1f2937;
             }
-            .card__description {
+            .images__rectangle-content__text {
               font-weight: 500;
               font-size: 14px;
               line-height: 20px;
@@ -238,105 +250,57 @@
             }
           }
 
-          .card__iconArrow {
+          .images__right-rectangle__img {
             cursor: pointer;
           }
         }
       }
     }
 
-    .imgBox__imgRight {
+    .images_footer-img {
     }
   }
 
-  .cardContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .advantage {
     margin-bottom: 150px;
-    .card__item {
-      max-width: 325px;
-      cursor: pointer;
-      .fon__logo {
-        max-width: 140px;
-        min-height: 140px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        background-color: #eef2ff;
-        border: none;
-        border-radius: 6px;
-        margin-bottom: 40px;
-        .logoForCard {
-        }
-      }
-
-      .card__title {
-        margin-bottom: 20px;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 36px;
-        text-align: center;
-        color: #374151;
-      }
-      .card__description {
+    .advantage__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .advantage__item {
         max-width: 325px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        text-align: center;
-        color: #9ca3af;
-      }
-    }
-  }
-
-  .careersBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin-bottom: 150px;
-    .title {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #6b7280;
-      text-transform: uppercase;
-    }
-    .itemStyle {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: #6b7280;
-    }
-    .company {
-      display: flex;
-      flex-direction: column;
-      .company__item {
-        margin: 0px 339px 80px 0px;
-        .massaFames {
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 24px;
-          color: #1f2937;
+        .advantage__item-img__box {
+          max-width: 140px;
+          min-height: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          background-color: #eef2ff;
+          border: none;
+          border-radius: 6px;
+          margin-bottom: 40px;
+          .advantage__item-img {
+          }
         }
-      }
-    }
 
-    .position {
-      display: flex;
-      flex-direction: column;
-      .position__item {
-        margin: 0px 323px 80px 0px;
-      }
-    }
-
-    .year {
-      display: flex;
-      flex-direction: column;
-      .year__item {
-        margin-bottom: 80px;
+        .advantage__item-heading {
+          margin-bottom: 20px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          color: #374151;
+        }
+        .advantage__item-descr {
+          max-width: 325px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          color: #9ca3af;
+        }
       }
     }
   }
