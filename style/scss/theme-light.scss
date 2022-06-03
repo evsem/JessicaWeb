@@ -24,11 +24,20 @@ body {
   font-size: 14px;
   color: black;
   height: 100vh;
+  @media (max-width: 425px) {
+    &.noscroll {
+      overflow: hidden;
+    }
+  }
 }
 
 [class*="__container"] {
   max-width: 1180px;
   margin: 0 auto;
+  overflow: hidden;
+  @media (max-width: 475px) {
+    max-width: 475px;
+  }
 }
 
 .wrapper {

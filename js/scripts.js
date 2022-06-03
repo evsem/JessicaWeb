@@ -34,7 +34,7 @@ if (active === null) {
 
 // ITEMS
 document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll(".images__body-left__img")
+  const items = document.querySelectorAll(".images__left-img__box")
 
   function itemsAnimation() {
     let windowCenter = window.innerHeight + window.scrollY
@@ -54,3 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
     itemsAnimation()
   })
 })
+
+// BURGER
+let body = document.body
+let wrapper = document.querySelector(".wrapper")
+let hamb = wrapper.querySelector(".header__hamb")
+let popup = wrapper.querySelector(".mobile__nav")
+
+hamb.addEventListener("click", openMenuMobile)
+
+function openMenuMobile(e) {
+  e.preventDefault()
+  popup.classList.toggle("open")
+  hamb.classList.toggle("active")
+  // body.classList.toggle("noscroll")
+}

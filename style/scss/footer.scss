@@ -2,6 +2,9 @@
   background-color: #fef2f2;
   .footer__container {
     padding: 110px 0px;
+    @media (max-width: 425px) {
+      padding: 80px 0px;
+    }
     .footer__title {
       font-weight: 500;
       font-size: 48px;
@@ -9,6 +12,9 @@
       text-align: center;
       color: #374151;
       margin-bottom: 20px;
+      @media (max-width: 425px) {
+        font-size: 42px;
+      }
     }
     .footer__descr {
       margin: 0 auto;
@@ -19,6 +25,11 @@
       text-align: center;
       color: #9ca3af;
       margin-bottom: 100px;
+      @media (max-width: 425px) {
+        padding: 0px 10px;
+        font-size: 16px;
+        margin-bottom: 64px;
+      }
     }
     .footer__images-box {
       max-width: 460px;
@@ -26,6 +37,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 425px) {
+        padding: 0px 30px;
+        max-width: 100%;
+      }
       .footer__images-img__box {
         .footer__images-img {
           cursor: pointer;

@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./src/icons/woman.png" type="image/png" />
+
+    <!--CSS-->
     <link
       href="https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/css/style.css" />
+    <link rel="stylesheet" href="./style/css/theme-light.css" />
     <link rel="stylesheet" title="theme" href="#" />
-    <script src="./js/main.js" defer></script>
+    <!--JS-->
+    <script src="./js/scripts.js" defer></script>
+
     <title>JessicaWeb</title>
   </head>
   <body>
     <div class="wrapper">
       <header id="header">
         <div class="header__container">
+          <div class="mobile__nav">
+            <nav class="mobile__nav-menu">
+              <a href="#services__block" class="mobile__nav-menu__item"
+                >Services</a
+              >
+              <a href="#works__block" class="mobile__nav-menu__item">Works</a>
+              <a href="#footer" class="mobile__nav-menu__item">Contacts</a>
+            </nav>
+          </div>
+
           <div class="header__logo">
             <img
               src="./src/icons/logo.svg"
@@ -40,6 +54,14 @@
             <a href="#works__block" class="header__menu-item">Works</a>
             <a href="#footer" class="header__menu-item">Contacts</a>
           </nav>
+
+          <div class="header__hamb">
+            <div class="header__hamb-field">
+              <span class="header__hamb-field__line"></span>
+              <span class="header__hamb-field__line"></span>
+              <span class="header__hamb-field__line"></span>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -257,23 +279,30 @@
           <div class="images__container">
             <div class="images__body">
               <div class="images__body-left">
-                <img
-                  src="./src/img/bus.jpg"
-                  alt="image"
-                  class="images__body-left__img"
-                />
-                <img
-                  src="./src/img/3.jpg"
-                  alt="image"
-                  class="images__body-left__img"
-                />
+                <div class="images__left-img__box">
+                  <img
+                    src="./src/img/bus.jpg"
+                    alt="image"
+                    class="images__body-left__img"
+                  />
+                </div>
+                <div class="images__left-img__box">
+                  <img
+                    src="./src/img/3.jpg"
+                    alt="image"
+                    class="images__body-left__img"
+                  />
+                </div>
               </div>
               <div class="images__body-right">
-                <img
-                  src="./src/img/2.jpg"
-                  alt="image"
-                  class="images__body-right__img"
-                />
+                <div class="images__body-img__box">
+                  <img
+                    src="./src/img/2.jpg"
+                    alt="image"
+                    class="images__body-img"
+                  />
+                </div>
+
                 <div class="images__body-right__rectangle">
                   <div class="images__right-rectangle__content">
                     <h5 class="images__rectangle-content__heading">
@@ -289,7 +318,7 @@
                 </div>
               </div>
             </div>
-            <img src="./src/img/4.jpg" alt="" class="images__footer-img" />
+            <img src="./src/img/4.jpg" alt="image" class="images__footer-img" />
           </div>
         </section>
 
