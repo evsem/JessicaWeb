@@ -60,6 +60,7 @@ let body = document.body
 let wrapper = document.querySelector(".wrapper")
 let hamb = wrapper.querySelector(".header__hamb")
 let popup = wrapper.querySelector(".mobile__nav")
+let mobileItems = wrapper.querySelectorAll(".mobile__nav-menu__item")
 
 hamb.addEventListener("click", openMenuMobile)
 
@@ -67,5 +68,12 @@ function openMenuMobile(e) {
   e.preventDefault()
   popup.classList.toggle("open")
   hamb.classList.toggle("active")
-  // body.classList.toggle("noscroll")
+  mobileItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      popup.classList.remove("open")
+      hamb.classList.remove("active")
+      body.classList.remove("noscroll")
+    })
+  })
+  body.classList.toggle("noscroll")
 }
