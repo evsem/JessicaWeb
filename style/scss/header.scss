@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     .mobile__nav {
       position: fixed;
-      top: 80px;
+      top: 94px;
       left: -100%;
       z-index: 100;
       width: 100%;
@@ -25,7 +25,6 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       text-align: center;
-      margin: 30px 0px;
       transition: 0.3s;
       &.open {
         left: 0;

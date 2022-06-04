@@ -72,10 +72,10 @@ body {
 }
 .wrapper #header .header__container .mobile__nav {
   position: fixed;
-  top: 80px;
+  top: 118px;
   left: -100%;
   z-index: 100;
-  width: 100%;
+  width: 96%;
   height: auto;
   background-color: rgb(52, 52, 52);
   color: #fff;
@@ -86,12 +86,11 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  margin: 30px 0px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .wrapper #header .header__container .mobile__nav.open {
-  left: 0;
+  left: 2%;
 }
 .wrapper #header .header__container .mobile__nav .mobile__nav-menu {
   padding: 30px 0px;
