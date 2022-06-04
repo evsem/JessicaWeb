@@ -35,11 +35,12 @@ if (active === null) {
 // ITEMS
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".images__left-img__box")
+  const rightItem = document.querySelector(".images__body-right")
+  const bottomItem = document.querySelector(".images__footer-img")
 
   function itemsAnimation() {
-    let windowCenter = window.innerHeight + window.scrollY
-
     items.forEach((item) => {
+      let windowCenter = window.innerHeight + window.scrollY
       let itemOffset = item.offsetTop + item.offsetHeight / 2
       if (windowCenter >= itemOffset) {
         item.classList.add("item__animation")
@@ -49,9 +50,35 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
+  function rightItemAnimation() {
+    let windowCenter = window.innerHeight + window.scrollY
+    let rightItemOffset = rightItem.offsetTop + rightItem.offsetHeight / 2
+
+    if (windowCenter >= rightItemOffset) {
+      rightItem.classList.add("itemRight__animation")
+    } else {
+      rightItem.classList.remove("itemRight__animation")
+    }
+  }
+
+  function bottomItemAnimation() {
+    let windowCenter = window.innerHeight + window.scrollY
+    let bottomItemOffset = bottomItem.offsetTop + bottomItem.offsetHeight / 2
+
+    if (windowCenter >= bottomItemOffset) {
+      bottomItem.classList.add("bottomItem__animation")
+    } else {
+      bottomItem.classList.remove("bottomItem__animation")
+    }
+  }
+
   itemsAnimation()
+  rightItemAnimation()
+  bottomItemAnimation()
   window.addEventListener("scroll", () => {
     itemsAnimation()
+    rightItemAnimation()
+    bottomItemAnimation()
   })
 })
 
